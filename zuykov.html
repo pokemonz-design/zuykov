@@ -22,7 +22,7 @@
           aria-selected="true"
         >
           <span class="tax-recon-step-number">1</span>
-          <span class="tax-recon-step-text">Заблуждение</span>
+          <span class="tax-recon-step-text">Миф</span>
         </button>
 
         <button
@@ -60,14 +60,13 @@
             Признаем и заплатим, тогда спор закроют
           </h3>
 
-        <p class="tax-recon-panel-text">
+          <p class="tax-recon-panel-text">
             Многие полагают, что если признать контрагента «техническим», доплатить налоги, пени и штрафы, то все риски будут сняты. Действительно, по статье «Уклонение от уплаты налогов» (199 УК РФ) уплата недоимки может освободить от уголовной ответственности.
           </p>
-<p class="tax-recon-panel-text">
+
+          <p class="tax-recon-panel-text">
             Но когда компания приходит в налоговую и заявляет: «Да, документы были фиктивными, но давайте пересчитаем», — это воспринимается как признание участия в схеме. С этого момента спор перестает быть чисто налоговым, а внимание переключается на другие аспекты.
           </p>
-
-
         </section>
 
         <section
@@ -82,16 +81,13 @@
             Следствие смотрит шире
           </h3>
 
-   <p class="tax-recon-panel-text">
-            Следственные органы все чаще квалифицируют те же хозяйственные операции по статьям Уголовного кодекса, не связанным напрямую с неуплатой налогов: фиктивная регистрация юрлица (ст. 173.1 УК), неправомерный оборот средств платежей (ст. 187 УК), легализация денежных средств (ст. 174.1 УК), а с 2025 года — еще и организация деятельности по продаже «бумажного НДС» (ст. 173.3 УК). 
+          <p class="tax-recon-panel-text">
+            Следственные органы все чаще квалифицируют те же хозяйственные операции по статьям Уголовного кодекса, не связанным напрямую с неуплатой налогов: фиктивная регистрация юрлица (ст. 173.1 УК), неправомерный оборот средств платежей (ст. 187 УК), легализация денежных средств (ст. 174.1 УК), а с 2025 года — еще и организация деятельности по продаже «бумажного НДС» (ст. 173.3 УК).
           </p>
 
-<p class="tax-recon-panel-text">
-Принципиальное отличие этих составов — по ним погашение недоимки не освобождает от ответственности. Даже полностью урегулированные налоговые претензии и успешная реконструкция не гарантируют прекращения уголовного дела.
+          <p class="tax-recon-panel-text">
+            Принципиальное отличие этих составов — по ним погашение недоимки не освобождает от ответственности. Даже полностью урегулированные налоговые претензии и успешная реконструкция не гарантируют прекращения уголовного дела.
           </p>
-
-
-         
         </section>
 
         <section
@@ -106,23 +102,17 @@
             Заставьте налоговую считать
           </h3>
 
-       
-     <p class="tax-recon-panel-text">
-
-           Именно поэтому мы принципиально избегаем формулировок «контрагент технический» и не признаем нарушение. Вместо этого создаем для инспекции ситуацию, когда полностью обнулить расходы становится рискованно. 
-          </p>
-   <p class="tax-recon-panel-text">
-
-           Загружаем налоговый орган объемным массивом объективных доказательств реальности операций: транспортные накладные, складские документы, переписка, банковские выписки, данные о реальных исполнителях. И настаиваем: налоговая база не может определяться произвольно, без учета реальных затрат. Это уже не просьба о поблажке, а указание на то, что решение инспекции будет уязвимым в суде.
-          </p>
-   <p class="tax-recon-panel-text">
-
-
-Так мы подводим инспектора к необходимости самостоятельно пересчитать действительные налоговые обязательства — без нашего признания схемы.
+          <p class="tax-recon-panel-text">
+            Именно поэтому мы принципиально избегаем формулировок «контрагент технический» и не признаем нарушение. Вместо этого создаем для инспекции ситуацию, когда полностью обнулить расходы становится рискованно.
           </p>
 
+          <p class="tax-recon-panel-text">
+            Загружаем налоговый орган объемным массивом объективных доказательств реальности операций: транспортные накладные, складские документы, переписка, банковские выписки, данные о реальных исполнителях. И настаиваем: налоговая база не может определяться произвольно, без учета реальных затрат. Это уже не просьба о поблажке, а указание на то, что решение инспекции будет уязвимым в суде.
+          </p>
 
-         
+          <p class="tax-recon-panel-text">
+            Так мы подводим инспектора к необходимости самостоятельно пересчитать действительные налоговые обязательства — без нашего признания схемы.
+          </p>
         </section>
       </div>
     </div>
@@ -181,7 +171,7 @@
 
   .tax-recon-layout {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 190px minmax(0, 1fr);
     gap: 18px;
     align-items: start;
   }
@@ -203,6 +193,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
     text-align: left;
     font: inherit;
@@ -267,6 +258,7 @@
   }
 
   .tax-recon-panel {
+    height: 245px;
     background: #ffffff;
     border: 1px solid rgba(202, 64, 55, 0.2);
     border-left: 6px solid #CA4037;
@@ -274,10 +266,31 @@
     padding: 24px;
     box-shadow: 0 10px 24px rgba(34, 34, 34, 0.06);
     animation: taxReconFadeIn 0.25s ease;
+
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .tax-recon-panel[hidden] {
     display: none;
+  }
+
+  .tax-recon-panel::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tax-recon-panel::-webkit-scrollbar-track {
+    background: #FAE8F4;
+    border-radius: 999px;
+  }
+
+  .tax-recon-panel::-webkit-scrollbar-thumb {
+    background: rgba(202, 64, 55, 0.45);
+    border-radius: 999px;
+  }
+
+  .tax-recon-panel::-webkit-scrollbar-thumb:hover {
+    background: #CA4037;
   }
 
   .tax-recon-label {
@@ -336,17 +349,21 @@
     }
 
     .tax-recon-layout {
-      grid-template-columns: 1fr;
-    }
-
-    .tax-recon-tabs {
-      flex-direction: row;
-      gap: 8px;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 14px;
     }
 
     .tax-recon-step {
-      justify-content: center;
-      text-align: center;
+      min-height: 48px;
+      padding: 10px;
+    }
+
+    .tax-recon-step-text {
+      font-size: 15px;
+    }
+
+    .tax-recon-panel {
+      height: 275px;
     }
   }
 
@@ -367,16 +384,30 @@
       font-size: 15px;
     }
 
-    .tax-recon-tabs {
-      flex-direction: column;
+    .tax-recon-layout {
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 10px;
     }
 
     .tax-recon-step {
       min-height: 44px;
-      justify-content: flex-start;
+      padding: 8px;
+      gap: 7px;
+    }
+
+    .tax-recon-step-number {
+      width: 24px;
+      height: 24px;
+      flex: 0 0 24px;
+      font-size: 13px;
+    }
+
+    .tax-recon-step-text {
+      font-size: 14px;
     }
 
     .tax-recon-panel {
+      height: 310px;
       padding: 18px;
       border-radius: 16px;
     }
@@ -387,6 +418,49 @@
 
     .tax-recon-panel-text {
       font-size: 16px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .tax-recon-card {
+      padding: 14px;
+    }
+
+    .tax-recon-layout {
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 8px;
+    }
+
+    .tax-recon-step {
+      padding: 7px;
+      gap: 6px;
+      border-radius: 12px;
+    }
+
+    .tax-recon-step-number {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      font-size: 12px;
+    }
+
+    .tax-recon-step-text {
+      font-size: 13px;
+    }
+
+    .tax-recon-panel {
+      height: 340px;
+      padding: 14px;
+      border-left-width: 4px;
+    }
+
+    .tax-recon-panel-title {
+      font-size: 18px;
+    }
+
+    .tax-recon-panel-text {
+      font-size: 15px;
+      line-height: 1.55;
     }
   }
 </style>
